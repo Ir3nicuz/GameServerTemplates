@@ -1,0 +1,13 @@
+{
+    "id": "9a3c69d4-1ed7-404f-9cf6-81dc00cd3cb2",
+    "authors": ["Ir3nicuz"],
+    "origin": "https://github.com/Ir3nicuz/amp_gameserver_templates",
+    "repotype": "AppTemplates",
+    "Templates": [
+        {
+            "Id": "EnshroudedServer",
+            "Title": "Enshrouded Server",
+            "Path": "4days2die_template"
+        }
+    ]
+}
