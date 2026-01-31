@@ -2,7 +2,7 @@
     "AppID": "EnshroudedServer",
     "ApplicationName": "Enshrouded Server",
     
-    "SteamAppID": "{{SteamAppIdConfig}}",
+    "SteamAppID": "2278520",
     "Executable": "{{ExecutablePath}}",
     "Arguments": "{{LaunchArguments}}",
 
@@ -36,7 +36,7 @@
         {
             "UpdateStageName": "SteamCmd Server Update",
             "UpdateSource": "SteamCMD",
-            "UpdateSourceData": "{{SteamAppIdConfig}}",
+            "UpdateSourceData": "{{SteamAppID}}",
             "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
             "UpdateSourcePlatform": "Windows",
             "ForceDownloadPlatform": "Windows"
@@ -65,13 +65,6 @@
     ],
 
     "Settings": [
-        {
-            "FieldName": "SteamAppIdConfig",
-            "DisplayName": "AppId",
-            "Description": "Server App Id from Steam.db",
-            "InputType": "number",
-            "DefaultValue": "000000"
-        },
         {
             "FieldName": "ServerFilesBetaVersion",
             "DisplayName": "Beta Branch Version",
