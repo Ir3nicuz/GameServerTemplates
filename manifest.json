@@ -4,8 +4,8 @@
     "repotype": "AppTemplates",
     "Templates": [
         { 
-            "Id": "TestTemplate", 
-            "Path": "testgame" 
+            "Id": "Enshrouded Server", 
+            "Path": "enshrouded_template" 
         }
     ]
 }
