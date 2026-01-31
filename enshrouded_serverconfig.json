@@ -5,9 +5,27 @@
     "SteamAppID": "{{SteamAppIdConfig}}",
     "Executable": "{{ExecutablePath}}",
     "Arguments": "{{LaunchArguments}}",
-    
-    "DockerImage": "://mcr.microsoft.com",
+
+    "DynamicRunMode": "Docker"
+    "DockerImage": "mcr.microsoft.com/windows/servercore:ltsc2022",
     "DockerRuntime": "windows",
+
+    "DockerMounts": [
+        {
+            "HostPath": "{{$FullBaseDir}}",
+            "ContainerPath": "C:\\app"
+        }
+    ]
+    "DockerMappedFolders": [
+        {
+            "HostPath": "{{$FullInstancePath}}AppData",
+            "ContainerPath": "C:\\Users\\ContainerUser\\AppData"
+        },
+        {
+            "HostPath": "{{$FullInstancePath}}Documents",
+            "ContainerPath": "C:\\Users\\ContainerUser\\Documents"
+        }
+    ]
 
     "UpdateStages": [
         {
