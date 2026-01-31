@@ -1,0 +1,39 @@
+"AppID": "7D2D_Server",
+    "ApplicationName": "7 Days to Die Custom",
+
+    "//": "--- ABSCHNITT 1: DIE LOGIK ---",
+    "SteamAppID": "251570",
+    "Executable": "7DaysToDieServer.exe",
+    "Arguments": "-batchmode -nographics",
+
+    "//": "--- ABSCHNITT 2: DOCKER ---",
+    "DockerImage": "://mcr.microsoft.com",
+    "DockerRuntime": "windows",
+
+    "//": "--- ABSCHNITT 3: DIE UPDATES (Früher eine eigene Datei) ---",
+    "UpdateStages": [
+        {
+            "UpdateStageName": "SteamCMD Download",
+            "UpdateSource": "SteamCMD",
+            "UpdateSourceData": "251570"
+        }
+    ],
+
+    "//": "--- ABSCHNITT 4: DIE PORTS (Früher eine eigene Datei) ---",
+    "Ports": [
+        {
+            "Name": "PrimaryPort",
+            "DisplayName": "Game Port",
+            "DefaultPort": 26900,
+            "Protocol": "UDP"
+        }
+    ],
+
+    "//": "--- ABSCHNITT 5: DIE VARIABLEN (Das lange JSON von vorhin) ---",
+    "Settings": [
+        {
+            "FieldName": "SteamBetaName",
+            "DisplayName": "Steam Beta Branch",
+            "InputType": "text"
+        }
+    ]
