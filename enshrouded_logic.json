@@ -60,5 +60,17 @@
                 "Protocol": "Both",
                 "Port": 15638
             }
-    ]
+    ],
+    
+    "UpdateStages": [
+        {
+            "UpdateStageName": "SteamCmd Server Update",
+            "UpdateSource": "SteamCMD",
+            "UpdateSourceData": "{{SteamAppId}}",
+            "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
+            "UpdateSourceTarget": "{{SteamAppId}}",
+            "UpdateSourcePlatform": "Windows",
+            "ForceDownloadPlatform": "Windows"
+        }
+    ]    
 }
