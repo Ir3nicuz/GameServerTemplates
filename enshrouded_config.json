@@ -1,4 +1,15 @@
 {
+    "UpdateStages": [
+     {
+         "UpdateStageName": "SteamCmd Server Update",
+         "UpdateSource": "SteamCMD",
+         "UpdateSourceData": "{{SteamAppId}}",
+         "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
+         "UpdateSourcePlatform": "Windows",
+         "ForceDownloadPlatform": "Windows"
+      }
+    ],
+    
     "Parameters": [
       {
          "FieldName": "SteamAppId",
