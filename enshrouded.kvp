@@ -1,15 +1,15 @@
-Meta.AppConfigId=4628ba74-b008-4a39-b481-126d2c1e8c23
-Meta.DisplayName=Empyrion Galactic Survival
+Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b7d
+Meta.DisplayName=Enshrouded Server
 Meta.ConfigRoot=enshrouded.kvp
 Meta.ConfigManifest=empyrion-galactic-survivalconfig.json
 
-Meta.Description=Empyrion Galactic Survival Dedicated Server
+Meta.Description=Generic SteamCmd Server Template
 Meta.Author=Ir3nicuz
 Meta.DisplayImageSource=steam:383120
 Meta.OS=Windows, Linux
 Meta.Arch=x86_64
-Meta.SpecificDockerImage=cubecoders/ampbase:wine-stable
-Meta.DockerRequired=False
+Meta.SpecificDockerImage=mcr.microsoft.com/windows/servercore:ltsc2022
+Meta.DockerRequired=True
 
 App.DisplayName=Empyrion Galactic Survival
 App.RootDir=./empyrion-galactic-survival/
