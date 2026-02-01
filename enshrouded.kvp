@@ -9,7 +9,6 @@ Meta.EndpointURIFormat=steam://connect/{ip}:{GenericModule.App.Ports.$SteamQuery
 Meta.ConfigManifest=empyrion-galactic-survivalconfig.json
 Meta.MetaConfigManifest=empyrion-galactic-survivalmetaconfig.json
 Meta.ConfigRoot=enshrouded.kvp
-Meta.MinAMPVersion=2.5.1.8
 Meta.SpecificDockerImage=cubecoders/ampbase:wine-stable
 Meta.DockerRequired=False
 Meta.AppConfigId=4628ba74-b008-4a39-b481-126d2c1e8c23
