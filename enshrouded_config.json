@@ -1,39 +1,4 @@
 {
-   "UpdateStages": [
-     {
-         "UpdateStageName": "SteamCmd Server Update",
-         "UpdateSource": "SteamCMD",
-         "UpdateSourceData": "{{SteamAppId}}",
-         "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
-         "UpdateSourcePlatform": "Windows",
-         "ForceDownloadPlatform": "Windows"
-      }
-    ],
-
-    "Ports": [
-      {
-         "Name": "Game / Query Port",
-         "Ref": "Port1",
-         "Description": "",
-         "Protocol": "Both",
-         "DefaultPort": 15637
-      },
-      {
-         "Name": "Game / Query Port",
-         "Ref": "Port2",
-         "Description": "",
-         "Protocol": "Both",
-         "DefaultPort": 15636
-      },
-      {
-         "Name": "Game / Query Port",
-         "Ref": "Port3",
-         "Description": "",
-         "Protocol": "Both",
-         "DefaultPort": 15638
-      }
-    ],
-
     "Parameters": [
       {
          "FieldName": "SteamAppId",
