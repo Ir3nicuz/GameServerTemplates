@@ -1,4 +1,4 @@
-{
+[
   {
     "UpdateStageName": "SteamCmd Server Update",
     "UpdateSource": "SteamCMD",
@@ -7,4 +7,4 @@
     "UpdateSourcePlatform": "Windows",
     "ForceDownloadPlatform": "Windows"
   }
-}
+]
