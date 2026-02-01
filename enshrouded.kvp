@@ -5,7 +5,7 @@ Meta.ConfigManifest=empyrion-galactic-survivalconfig.json
 
 Meta.Description=Generic SteamCmd Server Template
 Meta.Author=Ir3nicuz
-Meta.DisplayImageSource=steam:383120
+Meta.DisplayImageSource=https://cubecoders.com
 Meta.OS=Windows, Linux
 Meta.Arch=x86_64
 Meta.SpecificDockerImage=mcr.microsoft.com/windows/servercore:ltsc2022
