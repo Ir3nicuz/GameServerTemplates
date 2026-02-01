@@ -1,21 +1,21 @@
 {
   {
     "Name": "Port1",
-    "Ref":  "Port1",
+    "Ref": "",
     "Description": "",  
     "Protocol": "Both",
     "DefaultPort": 15637
   },
   {
     "Name": "Port2",
-    "Ref": "Port2",
+    "Ref": "",
     "Description": "",
     "Protocol": "Both",
     "DefaultPort": 15636
   },
   {
     "Name": "Port3",
-    "Ref": "Port3",
+    "Ref": "",
     "Description": "",
     "Protocol": "Both",
     "DefaultPort": 15638
