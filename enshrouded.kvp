@@ -2,8 +2,7 @@ Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b76
 Meta.DisplayName=Enshrouded Server
 Meta.ConfigRoot=enshrouded.kvp
 Meta.ConfigManifest=enshrouded_config.json
-App.UpdateSources=[]
-App.Ports=[]
+App.Ports=[{"Name":"Port1","Ref":"Port1","Description":"","Protocol":"Both","DefaultPort":15637},{"Name":"Port2","Ref":"Port2","Description":"","Protocol":"Both","DefaultPort":15636},{"Name":"Port3","Ref":"Port3","Description":"","Protocol":"Both","DefaultPort":15638}]
 
 Meta.Description=Generic SteamCmd Server Template
 Meta.Author=Ir3nicuz
@@ -14,6 +13,7 @@ Meta.Arch=x86_64
 
 App.DisplayName=Generic Steam Server
 App.SteamUpdateAnonymousLogin=True
+App.UpdateSources=[{"UpdateStageName":"SteamCmd Server Update","UpdateSource":"SteamCMD","UpdateSourceData":"{{SteamAppId}}","UpdateSourceArgs":"{{ServerFilesBetaVersion}}","UpdateSourcePlatform":"Windows","ForceDownloadPlatform":"Windows"}]
 App.RapidStartup=False
 App.WorkingDir=./
 App.ExecutableWin={{ExecutablePath}}
