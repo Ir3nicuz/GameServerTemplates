@@ -1,31 +1,22 @@
-Meta.DisplayName=Enshrouded Server
-Meta.AppConfigId=d2bef27b-ca22-4528-bc94-29fe3825b4a1
+Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b7c
+App.DisplayName=Enshrouded Server
+Meta.ConfigRoot=enshrouded.kvp
+Meta.ConfigManifest=enshrouded_config.json
 
 Meta.OS=Windows
 Meta.Arch=x86_64
-Meta.ConfigManifest=enshrouded_config.json
-Meta.ConfigRoot=GenericModule.kvp
 Meta.SpecificDockerImage=mcr.microsoft.com/windows/servercore:ltsc2022
 Meta.DockerRequired=True
 Meta.DockerBaseReadOnly=False
 
-App.DisplayName={{Meta.DisplayName}}
-App.RootDir=./{{Meta.DisplayName}}/
-App.BaseDirectory=./{{Meta.DisplayName}}/294420/
 App.ExecutableWin={{ExecutablePath}}
-App.WorkingDir=294420
+App.WorkingDir=./
 App.CommandLineArgs={{LaunchArguments}}
+App.StopCommand={{StopCmd}}
 App.ExitMethod=OS_CLOSE
-App.ExitMethodWindows=None
-App.ExitTimeout=60
+App.ExitMethodWindows=ConsoleEvent
+App.StopCommandWaitTime=15
+App.ExitTimeout=30
 App.HasWriteableConsole=True
 App.HasReadableConsole=True
-
-App.ForceIPBinding=False
-App.SupportsIPv6=False
-App.ApplicationIPBinding=0.0.0.0
-App.Ports=enshrouded_config.json
-
-App.UpdateSources=enshrouded_config.json
-App.ForceUpdate=False
 App.SteamUpdateAnonymousLogin=True
