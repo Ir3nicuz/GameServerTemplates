@@ -13,19 +13,19 @@
     "Ports": [
         {
             "Name": "Game / Query Port",
-            "Ref": "GamePort",
+            "Ref": "Port1",
             "Protocol": "Both",
             "DefaultPort": 15637
         },
         {
             "Name": "Game / Query Port",
-            "Ref": "GamePort2",
+            "Ref": "Port2",
             "Protocol": "Both",
             "DefaultPort": 15636
         },
         {
             "Name": "Game / Query Port",
-            "Ref": "GamePort3",
+            "Ref": "Port3",
             "Protocol": "Both",
             "DefaultPort": 15638
         }
@@ -35,7 +35,7 @@
         {
             "FieldName": "SteamAppId",
             "DisplayName": "Server AppId",
-            "Description": "The Steam.DB AppId of the files",
+            "Description": "The Steam.DB AppId of the server files",
             "InputType": "number",
             "DefaultValue": "2278520"
         },
@@ -48,22 +48,22 @@
         },
         {
             "FieldName": "ExecutablePath",
-            "DisplayName": "Pfad zur Server .exe im Container",
-            "Description": "Relativ zum Hauptverzeichnis, z.B. enshrouded_server.exe",
+            "DisplayName": "Path to server .exe",
+            "Description": "relative .exe path to container root, i.E enshrouded_server.exe",
             "InputType": "text",
             "DefaultValue": "enshrouded_server.exe"
         },
         {
             "FieldName": "LaunchArguments",
             "DisplayName": "Startparameter",
-            "Description": "Parameter für die Server .exe",
+            "Description": "Parameters to configure the server .exe",
             "InputType": "text",
             "DefaultValue": ""
         },
         {
             "FieldName": "StopCmd",
-            "DisplayName": "Stopp Befehl",
-            "Description": "Der Text Stop Befehl wird gesendet, bevor AMP versucht den Prozess direkt (X) zu beenden",
+            "DisplayName": "Stop Command",
+            "Description": "The stop text command is issued, before AMP tries to close (X) the instance",
             "InputType": "text",
             "DefaultValue": ""
         }
