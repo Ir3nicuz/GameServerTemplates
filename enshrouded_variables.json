@@ -1,5 +1,4 @@
-{
-    "Parameters": [
+[
         {
             "DisplayName": "Test",
             "Category": "Server Settings",
@@ -53,5 +52,5 @@
             "InputType": "text",
             "DefaultValue": ""
         }
-    ]
-}
+]
+
