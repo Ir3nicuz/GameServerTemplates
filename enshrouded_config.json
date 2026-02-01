@@ -62,13 +62,6 @@
          "Description": "Parameters to configure the server .exe",
          "InputType": "text",
          "DefaultValue": ""
-      },
-      {
-         "FieldName": "StopCmd",
-         "DisplayName": "Stop Command",
-         "Description": "The stop text command is issued, before AMP tries to close (X) the instance",
-         "InputType": "text",
-         "DefaultValue": ""
       }
     ]
 }
