@@ -2,7 +2,7 @@
     {
         "UpdateStageName": "SteamCmd Server Update",
         "UpdateSource": "SteamCMD",
-        "UpdateSourceData": 123456,
+        "UpdateSourceData": "{{SteamAppId}}",
         "UpdateSourceArgs": "{{ServerFilesBetaVersion}}",
         "UpdateSourceTarget": "123456",
         "UpdateSourcePlatform": "Windows",
