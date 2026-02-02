@@ -1,8 +1,9 @@
 [
     {
-        "DisplayName": "AMP-Test-Stage",
-        "UpdateSourceMethod": "ExecuteCommand",
-        "Command": "cmd.exe",
-        "Arguments": [ "/c", "echo Hallo AMP" ]
+        "UpdateStageName": "AMP-Test-Stage",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": [ "/c", "echo Hallo AMP" ]
     }
 ]
