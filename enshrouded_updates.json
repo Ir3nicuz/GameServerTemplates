@@ -2,23 +2,27 @@
     {
         "DisplayName": "Creating System Links",
         "UpdateSourceMethod": "ExecuteCommand",
-        "Command": "cmd.exe",
+        "Command": "powershell.exe",
         "Arguments": [
-            "/c", 
-            "mklink /J \".\\GameConfig\" \"C:\\Users\\AMP\\AppData\\Local\\MyGame\""
-        ]
-    },
-    {
-        "UpdateStageName": "SteamCmd Server Update",
-        "UpdateSourceMethod": "ExecuteCommand",
-        "Command": "C:\\SteamCmd\\steamcmd.exe",
-        "Arguments": [
-            "+force_install_dir", "./GameServerFiles/",
-            "@sSteamCmdForcePlatformType", "windows",
-            "+login", "anonymous",
-            "+app_update", "{{SteamAppId}}",
-            "-beta", "{{ServerFilesBetaVersion}}", "-validate",
-            "+quit"
+            "-NoProfile",
+            "-Command",
+            "$script = @'\r\n",
+            "$links = @{\r\n",
+            "    '.\\Windows_AppData' = 'C:\\Users\\amp\\AppData'\r\n",
+            "    '.\\Windows_Documents'  = 'C:\\Users\\amp\\AppData'\r\n",
+            "}\r\n",
+            "foreach ($name in $links.Keys) {\r\n",
+            "    $target = $links[$name]\r\n",
+            "    if (-not (Test-Path $name)) {\r\n",
+            "        Write-Host \"Creating Junction: $name -> $target\"\r\n",
+            "        New-Item -Path $name -Target $target -ItemType Junction | Out-Null\r\n",
+            "    } else {\r\n",
+            "        Write-Host \"Link $name already exists, skipping.\"\r\n",
+            "    }\r\n",
+            "}\r\n",
+            "'@;\r\n",
+            "$script | Out-File -FilePath .\\CreateLinks.ps1 -Encoding utf8 -Force;\r\n",
+            "& .\\CreateLinks.ps1"
         ]
     }
 ]
