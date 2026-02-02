@@ -1,9 +1,9 @@
 Meta.AppConfigId=6f1b3c2a-9d4e-4b7a-8f1c-2d3e4f5a6b5e
 Meta.DisplayName=Enshrouded Server
 Meta.ConfigRoot=enshrouded.kvp
-Meta.ConfigManifest=@IncludeJson[enshrouded_logic.json:Settings]
-App.Ports=@IncludeJson[enshrouded_logic.json:Ports]
-App.UpdateSources=@IncludeJson[enshrouded_logic.json:UpdateStages]
+Meta.ConfigManifest=enshrouded_variables.json
+App.Ports=@IncludeJson[enshrouded_ports.json]
+App.UpdateSources=@IncludeJson[enshrouded_updates.json]
 
 Meta.Description=Generic SteamCmd Server Template
 Meta.Author=Ir3nicuz
@@ -15,7 +15,6 @@ Meta.Arch=x86_64
 App.DisplayName=Generic Steam Server
 App.SteamUpdateAnonymousLogin=True
 App.RapidStartup=False
-App.SupportsIPv6=False
 App.ForceUpdate=False
 App.RootDir=./
 App.BaseDirectory=./
@@ -26,4 +25,5 @@ App.ExitMethod=OS_CLOSE
 App.ExitTimeout=30
 App.HasWriteableConsole=True
 App.HasReadableConsole=True
+App.SupportsIPv6=False
 
