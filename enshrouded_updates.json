@@ -3,7 +3,7 @@
         "UpdateStageName": "AMP-Test-Stage",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/c echo Hallo HeiliGeili!"
+        "UpdateSourceData": "powershell.exe",
+        "UpdateSourceArgs": "-NoProfile -Command $l=@{'.\\Windows_AppData'='C:\\Users\\amp\\AppData';'.\\Windows_Documents'='C:\\Users\\amp\\Documents'}; foreach($n in $l.Keys){$t=$l[$n]; if(!(Test-Path $n)){Write-Host \"Creating $n -> $t\"; New-Item -Path $n -Target $t -ItemType Junction | Out-Null}else{Write-Host \"$n exists\"}}"
     }
 ]
