@@ -4,6 +4,6 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": [ "/c", "echo Hallo AMP" ]
+        "UpdateSourceArgs": "/c echo Hallo HeiliGeili!"
     }
 ]
