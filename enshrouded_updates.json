@@ -12,7 +12,7 @@
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
         "UpdateSourceArgs": "-NoProfile -Command \"Write-Host '--- AMP PFAD TEST ---'; Write-Host 'Home (UserAppDir): {{UserAppDir}}'; Write-Host 'Instanz-Pfad: {{InstancePath}}'; Write-Host 'Arbeitsverzeichnis: ' (Get-Location).Path; Write-Host '--- TEST ENDE ---'\""
-    }.
+    },
     {
         "UpdateStageName": "SteamCmd Server Update",
         "UpdateSourcePlatform": "Windows",
