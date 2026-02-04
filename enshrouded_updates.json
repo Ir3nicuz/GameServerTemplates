@@ -11,6 +11,6 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "-NoProfile -ExecutionPolicy Bypass -Command \"C:\\SteamCmd\\steamcmd.exe +force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit | Out-String -Stream\""
+        "UpdateSourceArgs": "-NoProfile -ExecutionPolicy Bypass -Command \"C:\\SteamCmd\\steamcmd.exe +force_install_dir ./GameServerFiles/ @sSteamCmdForcePlatformType windows +login anonymous +app_update {{SteamAppId}} -beta {{ServerFilesBetaVersion}} -validate +quit 2>&1 | Out-String -Stream\""
     }
 ]
