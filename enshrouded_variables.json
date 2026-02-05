@@ -24,7 +24,7 @@
                 "Category": "Variables",
                 "Subcategory": "General",
                 "InputType": "text",
-                "DefaultValue": "enshrouded_server.exe"
+                "DefaultValue": "./gameserverfiles/enshrouded_server.exe"
         },
         {
                 "FieldName": "LaunchArguments",
