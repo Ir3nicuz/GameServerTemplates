@@ -1,7 +1,7 @@
 Meta.AppConfigId=1f145c2a-9d4e-4b7a-8f1c-2d694f5a6b2a
 Meta.DisplayName=Scum Server
 Meta.ConfigRoot=scum.kvp
-App.Ports=@IncludeJson[scum.json]
+App.Ports=@IncludeJson[scum_ports.json]
 Meta.ConfigManifest=generic_variables.json
 App.UpdateSources=@IncludeJson[generic_updates.json]
 
