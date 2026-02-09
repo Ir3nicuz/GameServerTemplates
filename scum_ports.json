@@ -1,0 +1,23 @@
+[
+    {
+        "Name": "Primary Port",
+        "Ref": "PrimaryPort",
+        "Description": "",  
+        "Protocol": "Both",
+        "Port": 7701
+    },
+    {
+        "Name": "Additional Port 1",
+        "Ref": "AddPort1",
+        "Description": "",
+        "Protocol": "Both",
+        "Port": 7702
+    },
+    {
+        "Name": "Additional Port 2",
+        "Ref": "AddPort2",
+        "Description": "",
+        "Protocol": "Both",
+        "Port": 7703
+    }
+]
