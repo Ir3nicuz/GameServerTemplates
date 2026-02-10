@@ -29,7 +29,7 @@
         {
                 "FieldName": "ExecutablePath",
                 "DisplayName": "Path to server .exe",
-                "Description": "relative .exe path to container root, i.E enshrouded_server.exe",
+                "Description": "relative .exe path from gameserverfiles as root, i.E ./enshrouded_server.exe",
                 "Category": "Variables",
                 "Subcategory": "General",
                 "InputType": "text",
