@@ -1,0 +1,12 @@
+{
+  "title": "Ir3nicuz Custom Market",
+  "description": "Meine privaten Server-Templates",
+  "items": [
+    {
+      "title": "Windows Core Gameserver",
+      "description": "Basis-Template mit Auto-Maintenance",
+      "author": "Ir3nicuz",
+      "url": "https://github.com/Ir3nicuz/amp_gameserver_templates/market.json"
+    }
+  ]
+}
